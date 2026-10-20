@@ -1,0 +1,24 @@
+body{
+    margin: 0;
+    font-family: Arial;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 100hv;
+
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: black;
+    padding: 10px;
+}
+
+.item div {
+    background-color: #f1f1f1;
+    border: 1px solid blue;
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+}
