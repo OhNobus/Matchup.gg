@@ -6,14 +6,30 @@ body{
 
 .container {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-areas:
+    "header header"
+    "lastseen pinnedchamp"
+    ;
+    grid-template-columns: 1fr 3fr;
     width: 100%;
     min-height: 100vh;
     background-color: grey;
 
 }
 
-.champ_contain {
-    background-color: #d1d1d1;
 
+
+.container pinnedchamp {
+    grid-area: pinnedchamp;
+    background-color: #ffffff;
+}
+
+.container lastseen {
+    grid-area: lastseen;
+    background-color: #ffffff;
+}
+
+.container header {
+    grid-area: header;
+    background-color: #ffffff;
 }
